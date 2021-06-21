@@ -42,11 +42,11 @@ pipeline {
          }
        }
     }
-			 stage('Unit Tests') {
-				steps {
-						sh 'npm run test'
-					}
-				}
+			// stage('Unit Tests') {
+			//	steps {
+			//			sh 'npm run test'
+			//		}
+			//	}
 
     stage('Static Code Analysis'){
 		steps{
