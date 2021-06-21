@@ -1,0 +1,43 @@
+<h1>Registrar Producto</h1>
+<h3>Ejemplo validacion de formularios reactivos con directiva</h3>
+<form [formGroup]="productoForm" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-sm-2">
+      <label>codigoProducto:</label>
+    </div>
+    <div class="col-sm-4">
+      <input validar type="text" id="codigoProducto" name="codigoProducto" placeholder="Codigo Producto" class="form-control"
+        formControlName="codigoProducto">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <label>descripcionProducto:</label>
+    </div>
+    <div class="col-sm-4">
+      <input validar type="text" id="descripcionProducto" name="descripcionProducto" placeholder="Descripción producto"
+        class="form-control" formControlName="descripcionProducto">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <label>unidadesDisponibles:</label>
+    </div>
+    <div class="col-sm-4">
+      <input validar type="text" id="unidadesDisponibles" name="unidadesDisponibles" placeholder="Unidades disponibles"
+        class="form-control" formControlName="unidadesDisponibles">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <label>unidadesComprometidas:</label>
+    </div>
+    <div class="col-sm-4">
+      <input validar type="text" id="unidadesComprometidas" name="unidadesComprometidas" placeholder="Unidades comprometidas"
+        class="form-control" formControlName="unidadesComprometidas">
+    </div>
+  </div>
+  <button type="submit" >
+    Crear
+  </button>
+</form>

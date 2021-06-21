@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { ProductoService } from '@producto/shared/service/producto.service';
+import { Producto } from '@producto/shared/model/producto';
+
+@Component({
+  selector: 'app-listar-producto',
+  templateUrl: './listar-producto.component.html',
+  styleUrls: ['./listar-producto.component.css']
+})
+export class ListarProductoComponent implements OnInit {
+  public listaProductos: Observable<Producto[]>;
+
+  constructor(protected productoService: ProductoService) { }
+
+  headElements = ['idProducto', 'codigoProducto', 'descripcionProducto', 'unidadesDisponibles', 'unidadesComprometidas'];
+
+  ngOnInit() {
+    this.listaProductos = this.productoService.consultar();
+  }
+
+}
