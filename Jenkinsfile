@@ -42,6 +42,13 @@ pipeline {
          }
        }
     }
+ stage('Unit Tests') {
+					steps {
+						dir("${PATH_MODULO_ADMINISTRATIVO_FRONT}") {
+							sh 'ng test'
+						}
+					}
+				}
 
     stage('Static Code Analysis'){
 		steps{
