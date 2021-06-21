@@ -42,13 +42,13 @@ pipeline {
          }
        }
     }
-// stage('Unit Tests') {
-//					steps {
-//						dir("${PATH_MODULO_ADMINISTRATIVO_FRONT}") {
-//							sh 'npm run e2e'
-//						}
-//					}
-//				}
+			stage('Unit Tests') {
+					steps {
+						dir("${PATH_MODULO_ADMINISTRATIVO_FRONT}") {
+							sh 'ng e2e
+						}
+					}
+				}
 
     stage('Static Code Analysis'){
 		steps{
