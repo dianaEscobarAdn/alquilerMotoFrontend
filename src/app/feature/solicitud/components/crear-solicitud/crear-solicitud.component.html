@@ -1,42 +1,12 @@
 <h1>Registrar Solicitud</h1>
-<form [formGroup]="solicitudForm" (ngSubmit)="onSubmit()">  
-  <div class="row">
-    <div class="col-sm-2">
-      <label>Producto:</label>
-    </div>
-    <div class="col-sm-4">
-      <input validar type="text" id="idProducto" name="idProducto" placeholder="id Producto"
-        class="form-control" formControlName="idProducto">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2">
-      <label>Persona:</label>
-    </div>
-    <div class="col-sm-4">
-      <input validar type="text" id="idPersona" name="idPersona" placeholder="id Persona"
-        class="form-control" formControlName="idPersona">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2">
-      <label>Fecha de Solicitud:</label>
-    </div>
-    <div class="col-sm-4">
-      <input validar type="text" id="fechaSolicitud" name="fechaSolicitud" placeholder="fecha de Solicitud"
-        class="form-control" formControlName="fechaSolicitud">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2">
-      <label>Días de alquiler:</label>
-    </div>
-    <div class="col-sm-4">
-      <input validar type="text" id="diasAlquiler" name="diasAlquiler" placeholder="días de alquiler"
-        class="form-control" formControlName="diasAlquiler">
-    </div>
-  </div> 
-  <div>
-    <button type="submit" class="btn btn-primary"> Crear </button>
-  </div>
+<form [formGroup]="solicitudForm" (ngSubmit)="onSubmit()"  class="form">
+  <input validar type="number" id="idProducto" name="idProducto" placeholder="Id Producto"
+        formControlName="idProducto">
+  <input validar type="number" id="idPersona" name="idPersona" placeholder="id Persona"
+        formControlName="idPersona">
+  <input validar type="date" id="fechaSolicitud" name="fechaSolicitud" placeholder="Fecha Solicitud"
+        formControlName="fechaSolicitud">
+  <input validar type="number" id="diasAlquiler" name="diasAlquiler" placeholder="Días Alquiler"
+        formControlName="diasAlquiler">
+  <button type="submit" class="btn btn-primary"> Crear </button>
 </form>

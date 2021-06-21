@@ -32,7 +32,7 @@ describe('workspace-project Solicitud', () => {
         // expect(<>).toEqual(<>);
     });
 
-    it('Se listara personas', () => {
+    it('Se listara solicitudes', () => {
         page.navigateTo();
         navBar.clickBotonSolicitudes();
         solicitud.clickBotonListarSolicitudes();
