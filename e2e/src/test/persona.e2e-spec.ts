@@ -32,8 +32,7 @@ describe('workspace-project Persona', () => {
         persona.ingresarTelefono(TELEFONO);
         persona.ingresarDireccion(DIRECCION);
 
-        // Adicionamos las validaciones despues de la creación
-        // expect(<>).toEqual(<>);
+       // expect(1).toBe(persona.contarPersonas());
     });
 
     it('Se listara personas', () => {

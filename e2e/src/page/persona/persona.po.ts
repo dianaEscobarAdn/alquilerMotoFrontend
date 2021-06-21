@@ -9,7 +9,7 @@ export class PersonaPage {
     private inputApellido = element(by.id('apellido'));
     private inputTelefono = element(by.id('telefono'));
     private inputDireccion = element(by.id('direccion'));
-    private listaPersonas = element.all(by.css('ul.personas li'));
+    private listaPersonas = element.all(by.css('table'));
 
     async clickBotonCrearPersonas() {
         await this.linkCrearPersona.click();

@@ -1,5 +1,4 @@
 <h1>Registrar Persona</h1>
-<h3>Ejemplo validacion de formularios reactivos con directiva</h3>
 <form [formGroup]="personaForm" (ngSubmit)="onSubmit()"> 
   <div class="row">
     <div class="col-sm-2">
@@ -46,7 +45,7 @@
         class="form-control" formControlName="direccion">
     </div>
   </div>
-  <button type="submit" >
-    Crear
-  </button>
+  <div>
+    <button type="submit" class="btn btn-primary"> Crear </button>
+  </div>
 </form>

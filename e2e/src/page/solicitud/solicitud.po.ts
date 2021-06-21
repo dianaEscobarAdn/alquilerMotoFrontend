@@ -7,7 +7,7 @@ export class SolicitudPage {
     private inputIdPersona = element(by.id('idPersona'));
     private inputFechaSolicitud = element(by.id('fechaSolicitud'));
     private inputDiasAlquiler = element(by.id('diasAlquiler'));
-    private listaSolicitudes = element.all(by.css('ul.solicitudes li'));
+    private listaSolicitudes = element.all(by.css('table'));
 
     async clickBotonCrearSolicitudes() {
         await this.linkCrearSolicitud.click();

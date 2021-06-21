@@ -8,7 +8,7 @@ export class ProductoPage {
     private inputDescripcionProducto = element(by.id('descripcionProducto'));
     private inputUnidadesDisponibles = element(by.id('unidadesDisponibles'));
     private inputUnidadesComprometidas = element(by.id('unidadesComprometidas'));
-    private listaProductos = element.all(by.css('ul.productos li'));
+    private listaProductos = element.all(by.css('table'));
 
     async clickBotonCrearProductos() {
         await this.linkCrearProducto.click();

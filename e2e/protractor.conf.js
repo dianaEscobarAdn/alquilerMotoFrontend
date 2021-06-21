@@ -3,6 +3,7 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
+const { by } = require("protractor");
 var HtmlReporter = require('protractor-beautiful-reporter');
 
 /**
@@ -22,7 +23,9 @@ exports.config = {
   jasmineNodeOpts: {
     showColors: true,
     defaultTimeoutInterval: 30000,
-    print: function() {}
+    print: function () {
+      console.log("Testing");
+    },
   },
   onPrepare() {
     require('ts-node').register({
