@@ -41,7 +41,7 @@ describe('ListarProductoComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
     component.listaProductos.subscribe(resultado => {
-      expect(2).toBe(resultado.length);
+    expect(2).toBe(resultado.length);
   });
 });
 });

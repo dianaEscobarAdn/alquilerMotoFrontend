@@ -55,9 +55,9 @@ describe('CrearSolicitudComponent', () => {
     component.solicitudForm.controls.idPersona.setValue('1');
     component.solicitudForm.controls.fechaSolicitud.setValue('2021-06-22');
     component.solicitudForm.controls.diasAlquiler.setValue('5');
+    component.onSubmit();
     expect(component.solicitudForm.valid).toBeTruthy();
 
-    component.onSubmit();
 
     // Aca validamos el resultado esperado al enviar la petición
     // TODO adicionar expect

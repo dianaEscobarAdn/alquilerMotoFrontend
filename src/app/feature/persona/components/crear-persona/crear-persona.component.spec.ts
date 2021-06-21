@@ -56,9 +56,9 @@ describe('CrearPersonaComponent', () => {
     component.personaForm.controls.apellido.setValue('Test');
     component.personaForm.controls.telefono.setValue('2222222');
     component.personaForm.controls.direccion.setValue('Calle 10');
+    component.onSubmit();
     expect(component.personaForm.valid).toBeTruthy();
 
-    component.onSubmit();
 
     // Aca validamos el resultado esperado al enviar la petición
     // TODO adicionar expect

@@ -45,7 +45,7 @@ pipeline {
  stage('Unit Tests') {
 					steps {
 						dir("${PATH_MODULO_ADMINISTRATIVO_FRONT}") {
-							sh 'ng test'
+							sh 'npm run e2e'
 						}
 					}
 				}

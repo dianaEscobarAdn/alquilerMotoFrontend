@@ -41,7 +41,7 @@ describe('ListarPersonaComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
     component.listaPersonas.subscribe(resultado => {
-      expect(1).toBe(resultado.length);
+    expect(1).toBe(resultado.length);
   });
 });
 });
